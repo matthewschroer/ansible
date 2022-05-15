@@ -1,6 +1,15 @@
 proxmox
-plex
+
+[VMs]
+dockerprod
+unifi
 bitwarden_admin
+
+[ubuntu]
+plex
 octoprint
 dockerprod
 unifi
+bitwarden_admin
+
+[New_Ubuntu]
