@@ -4,6 +4,9 @@ proxmox
 dockerprod
 unifi
 bitwarden_admin
+gitserver
+truenasSyncthing
+
 
 [ubuntu]
 plex
