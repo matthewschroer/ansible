@@ -1,0 +1,24 @@
+---
+
+- hosts: VMs
+  become: true
+  pre_tasks:
+
+  - name: Install Updates (Ubuntu)
+    tags: always
+    apt:
+      upgrade: dist
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+- hosts: VMs
+  become: true
+  tasks:
+
+  - name: Install Packages
+    apt:
+      pkg:
+        - qemu-guest-agent
+        - htop
+        - tmux
+    when: ansible_distribution == "Ubuntu"
